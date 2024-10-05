@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd ~/sync
+for i in $(ls -1); do
+  echo $i
+  rc3sync.py $i
+
+  if [ $? -eq 0 ]
+  then
+    echo "Success: copy successful."
+  else
+    echo "Failure:" >&2
+  fi
+done
