@@ -24,7 +24,7 @@ def index():
     </form>
     '''
 
-@app.route('/upload', methods=['POST'])
+@app.route('/connect', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part in the request'}), 400

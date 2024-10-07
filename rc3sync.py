@@ -57,8 +57,8 @@ def main():
     # Set up argument parser
     parser = argparse.ArgumentParser(description='Upload a file to the server with progress tracking.')
     parser.add_argument('file_path', type=str, help='Path to the file to upload')
-    parser.add_argument('--server_url', type=str, default='https://10.10.1.40:443/upload',
-                        help='URL of the server where the file will be uploaded (default: https://10.10.1.40:443/upload)')
+    parser.add_argument('--server_url', type=str, default='https://10.10.1.40:443/connect',
+                        help='URL of the server where the file will be uploaded (default: https://10.10.1.40:443/connect)')
     
     # Parse arguments
     args = parser.parse_args()
