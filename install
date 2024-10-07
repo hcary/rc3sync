@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cp rc3sync ~/bin
+cp rc3sync.py ~/bin
+
+chmod +x  ~/bin/rc3sync
+chmod +x  ~/bin/rc3sync.py
